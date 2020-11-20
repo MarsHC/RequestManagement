@@ -16,3 +16,4 @@ let AFTER_TIME_SECONDS = 5
 let TIMER_INTERVAL = 5
 
 
+let REQUEST_RECORD_FILE_NAME = "RequestRecord.plist"

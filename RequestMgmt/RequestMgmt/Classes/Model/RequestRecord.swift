@@ -13,4 +13,10 @@ struct RequestRecord: Convertible {
     var requestTime: String?
     //调用结果
     var requestResult: String?
+    
+    func initWithDict(dict : [String : String]) {
+        
+    }
+    
+    
 }

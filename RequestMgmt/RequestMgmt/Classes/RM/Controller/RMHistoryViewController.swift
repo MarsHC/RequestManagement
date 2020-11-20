@@ -9,12 +9,27 @@
 import UIKit
 
 class RMHistoryViewController: UIViewController {
+    private lazy var rmHistoryPresenter = RMHistoryPresenter()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = .white;
+        navigationItem.title = "Request History List"
+        
+        rmHistoryPresenter.controller = self
+        rmHistoryPresenter.setupUI()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    
+        rmHistoryPresenter.controller = nil
+    }
 
+    deinit {
+        print("RMHistoryViewController deinit")
+    }
 }

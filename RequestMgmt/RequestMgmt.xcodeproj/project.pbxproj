@@ -21,6 +21,7 @@
 		A874E1C225667E3D0018A492 /* RequestRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874E1C125667E3D0018A492 /* RequestRecord.swift */; };
 		A874E1C4256690030018A492 /* RMResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874E1C3256690030018A492 /* RMResultPresenter.swift */; };
 		A874E1C62566967F0018A492 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874E1C52566967F0018A492 /* Const.swift */; };
+		A895A8202567C9040043310E /* RMHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A81F2567C9040043310E /* RMHistoryPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A874E1C125667E3D0018A492 /* RequestRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRecord.swift; sourceTree = "<group>"; };
 		A874E1C3256690030018A492 /* RMResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMResultPresenter.swift; sourceTree = "<group>"; };
 		A874E1C52566967F0018A492 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		A895A81F2567C9040043310E /* RMHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMHistoryPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				A874E1C3256690030018A492 /* RMResultPresenter.swift */,
+				A895A81F2567C9040043310E /* RMHistoryPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A895A8202567C9040043310E /* RMHistoryPresenter.swift in Sources */,
 				A874E1C4256690030018A492 /* RMResultPresenter.swift in Sources */,
 				A874E1BB2566608E0018A492 /* RMHistoryViewController.swift in Sources */,
 				A874E1BD256667540018A492 /* RequestUrl.swift in Sources */,
