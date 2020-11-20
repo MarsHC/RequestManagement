@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import KakaJSON
 
 class RMResultViewController: UIViewController {
+    private lazy var rmResultPresenter = RMResultPresenter()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .red;
-        
+        view.backgroundColor = .white;
         navigationItem.title = "Request Result"
+        
+        rmResultPresenter.controller = self
+        rmResultPresenter.setupUI()
+        rmResultPresenter.setupTimer()
     }
     
-
 }
