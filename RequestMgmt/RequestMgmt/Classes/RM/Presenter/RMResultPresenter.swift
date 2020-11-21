@@ -94,6 +94,10 @@ extension RMResultPresenter {
                     if( PlistHelper.saveModelArrayToPlist(modelArray: self.requestRecordArray!, fileName: REQUEST_RECORD_FILE_NAME) == true) {
                         self.loadData()
                     }
+                    
+                    //发送新成功调用产生通知
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: NEW_REQUEST_SUCCESS_NOTIFY), object: nil, userInfo: nil)
+
                 }
             }
             RunLoop.current.add(timer, forMode: RunLoop.Mode.common)

@@ -7,6 +7,6 @@ target 'RequestMgmt' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'Alamofire', '~> 5.0.0-rc.3'
   pod 'KakaJSON', '~> 1.1.2'
-  pod 'SVProgressHUD', '~> 2.2.5'
   pod 'MJRefresh'
+  pod 'MBProgressHUD'
 end

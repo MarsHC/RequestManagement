@@ -19,3 +19,5 @@ let TIMER_INTERVAL = 5
 let REQUEST_RECORD_FILE_NAME = "RequestRecord.plist"
 
 let DATE_TIME_FORMATTER = "yyyy-MM-dd HH:mm:ss"
+
+let NEW_REQUEST_SUCCESS_NOTIFY = "kNewRequestSuccessNotify"

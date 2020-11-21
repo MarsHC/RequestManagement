@@ -22,12 +22,14 @@ class RMHistoryViewController: UIViewController {
         rmHistoryPresenter.setupUI()
         rmHistoryPresenter.loadData()
         rmHistoryPresenter.setupHeader()
+        rmHistoryPresenter.setupNotification()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     
         rmHistoryPresenter.controller = nil
+        rmHistoryPresenter.removeNotification()
     }
 
     deinit {

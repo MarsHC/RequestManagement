@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class RMHistoryPresenter: NSObject,UITableViewDataSource,UITableViewDelegate {
     var controller : UIViewController?
@@ -45,6 +46,23 @@ extension RMHistoryPresenter {
      func setupHeader() {
         tableView.mj_header = MJRefreshNormalHeader()
         tableView.mj_header?.setRefreshingTarget(self, refreshingAction: #selector(self.loadData))
+    }
+}
+
+extension RMHistoryPresenter {
+    func setupNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(newRequestSuccessHandle), name: NSNotification.Name(rawValue: NEW_REQUEST_SUCCESS_NOTIFY), object: nil)
+    }
+    
+    @objc private func newRequestSuccessHandle(_ notify: NSNotification) {
+        let hud = MBProgressHUD.showAdded(to: (controller?.view)!, animated: true)
+        hud.detailsLabel.text = "产生了一个新的调用，下拉可以加载新数据"
+        hud.mode = MBProgressHUDMode.text;
+        hud.hide(animated: true, afterDelay: 2)
+    }
+    
+    func removeNotification() {
+        NotificationCenter.default.removeObserver(self)
     }
 }
 
