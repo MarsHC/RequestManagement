@@ -21,6 +21,7 @@ class RMHistoryViewController: UIViewController {
         rmHistoryPresenter.controller = self
         rmHistoryPresenter.setupUI()
         rmHistoryPresenter.loadData()
+        rmHistoryPresenter.setupHeader()
     }
 
     override func viewWillDisappear(_ animated: Bool) {

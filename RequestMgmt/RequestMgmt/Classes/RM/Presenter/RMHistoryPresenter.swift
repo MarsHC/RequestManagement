@@ -33,15 +33,18 @@ extension RMHistoryPresenter {
 
 //加载数据源
 extension RMHistoryPresenter {
-    func loadData() {
+    @objc func loadData() {
         requestRecordArray = PlistHelper.loadModelArray(fileName: REQUEST_RECORD_FILE_NAME) ?? [RequestRecord]()
+        tableView.reloadData()
+        tableView.mj_header?.endRefreshing()
     }
 }
 
 //下拉刷新
 extension RMHistoryPresenter {
-    func setupHeader() {
-        
+     func setupHeader() {
+        tableView.mj_header = MJRefreshNormalHeader()
+        tableView.mj_header?.setRefreshingTarget(self, refreshingAction: #selector(self.loadData))
     }
 }
 
