@@ -19,8 +19,6 @@ class RMHistoryPresenter: NSObject,UITableViewDataSource,UITableViewDelegate {
         tableView.delegate = self
         return tableView
     }()
-    
-   
 }
 
 // MARK:- 设置UI
@@ -35,7 +33,7 @@ extension RMHistoryPresenter {
 // MARK:- UITableViewDataSource,UITableViewDelegate
 extension RMHistoryPresenter {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
 
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

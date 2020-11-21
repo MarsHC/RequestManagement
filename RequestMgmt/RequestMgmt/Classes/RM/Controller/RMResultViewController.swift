@@ -22,7 +22,7 @@ class RMResultViewController: UIViewController {
         
         rmResultPresenter.controller = self
         rmResultPresenter.setupUI()
-        rmResultPresenter.setup()
+        rmResultPresenter.loadData()
         rmResultPresenter.setupTimer()
     }
     
