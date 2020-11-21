@@ -66,7 +66,7 @@ extension RMResultPresenter {
         requestRecordArray = PlistHelper.loadModelArray(fileName: REQUEST_RECORD_FILE_NAME) ?? [RequestRecord]()
         
         if requestRecordArray!.count > 0 {
-            let rr = requestRecordArray!.last! as RequestRecord
+            let rr = requestRecordArray!.first! as RequestRecord
             self.requestTimeLabel.text = rr.requestTime
             self.resultTV.text = rr.requestResult
         }
@@ -95,7 +95,6 @@ extension RMResultPresenter {
             RunLoop.current.add(timer, forMode: RunLoop.Mode.common)
             timer.fire()
         }
-        
     }
     
     // MARK: 字典转字符串

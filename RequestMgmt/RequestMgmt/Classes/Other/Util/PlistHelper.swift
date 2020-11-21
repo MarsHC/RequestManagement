@@ -36,8 +36,8 @@ class PlistHelper: NSObject {
             return nil;
         }else{
             guard let resultDictArray = NSArray(contentsOfFile: path) else {return nil}
-             
-            for dict in resultDictArray {
+            
+            for dict in resultDictArray.reversed() {
                 let d = dict as! NSDictionary
                 let rr = d.kj.model(RequestRecord.self)!
                 modelArray.append(rr)

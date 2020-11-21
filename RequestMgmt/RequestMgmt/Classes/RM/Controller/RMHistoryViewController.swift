@@ -11,7 +11,6 @@ import UIKit
 class RMHistoryViewController: UIViewController {
     private lazy var rmHistoryPresenter = RMHistoryPresenter()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +20,7 @@ class RMHistoryViewController: UIViewController {
         
         rmHistoryPresenter.controller = self
         rmHistoryPresenter.setupUI()
+        rmHistoryPresenter.loadData()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
