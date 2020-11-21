@@ -29,10 +29,19 @@ extension RMHistoryPresenter {
             make.edges.equalToSuperview()
         }
     }
-    
-    //加载数据源
+}
+
+//加载数据源
+extension RMHistoryPresenter {
     func loadData() {
         requestRecordArray = PlistHelper.loadModelArray(fileName: REQUEST_RECORD_FILE_NAME) ?? [RequestRecord]()
+    }
+}
+
+//下拉刷新
+extension RMHistoryPresenter {
+    func setupHeader() {
+        
     }
 }
 

@@ -61,7 +61,11 @@ extension RMResultPresenter {
         }
     }
     
-    //加载数据
+    
+}
+
+//加载数据
+extension RMResultPresenter {
     func loadData() {
         requestRecordArray = PlistHelper.loadModelArray(fileName: REQUEST_RECORD_FILE_NAME) ?? [RequestRecord]()
         
