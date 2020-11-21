@@ -24,7 +24,6 @@ class RMResultViewController: UIViewController {
         rmResultPresenter.setupUI()
         rmResultPresenter.loadData()
         rmResultPresenter.setupTimer()
-        
     }
     
 }

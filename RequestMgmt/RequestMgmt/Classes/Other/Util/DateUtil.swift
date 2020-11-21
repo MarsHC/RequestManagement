@@ -12,7 +12,7 @@ class DateUtil: NSObject {
     static func nowDateTimeToStr(format : String) -> String {
         let now = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = DATE_TIME_FORMATTER
+        dateFormatter.dateFormat = format
         return dateFormatter.string(from: now)
     }
 }

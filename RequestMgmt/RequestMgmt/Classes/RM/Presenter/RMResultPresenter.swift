@@ -106,7 +106,7 @@ extension RMResultPresenter {
     }
     
     // MARK: 字典转字符串
-    private func dictToString(_ dic:[String : Any]) -> String?{
+    public func dictToString(_ dic:[String : Any]) -> String?{
         let data = try? JSONSerialization.data(withJSONObject: dic, options: [])
         let str = String(data: data!, encoding: String.Encoding.utf8)
         return str?.replacingOccurrences(of: "\\/", with: "/");

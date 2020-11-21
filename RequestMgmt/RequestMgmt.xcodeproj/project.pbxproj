@@ -11,7 +11,6 @@
 		945132C71917888F0E64A209 /* Pods_RequestMgmt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1019418A0A49E30E9408FB48 /* Pods_RequestMgmt.framework */; };
 		A874E18825665E940018A492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A874E18725665E940018A492 /* Assets.xcassets */; };
 		A874E18B25665E940018A492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A874E18925665E940018A492 /* LaunchScreen.storyboard */; };
-		A874E19625665E960018A492 /* RequestMgmtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874E19525665E960018A492 /* RequestMgmtTests.swift */; };
 		A874E1A125665E960018A492 /* RequestMgmtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874E1A025665E960018A492 /* RequestMgmtUITests.swift */; };
 		A874E1B6256660060018A492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874E1B1256660060018A492 /* AppDelegate.swift */; };
 		A874E1B7256660060018A492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874E1B2256660060018A492 /* SceneDelegate.swift */; };
@@ -25,6 +24,9 @@
 		A895A8202567C9040043310E /* RMHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A81F2567C9040043310E /* RMHistoryPresenter.swift */; };
 		A895A8282568949C0043310E /* PlistHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A8262568949C0043310E /* PlistHelper.swift */; };
 		A895A8292568949C0043310E /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A8272568949C0043310E /* DateUtil.swift */; };
+		A895A831256962370043310E /* PlistHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A830256962370043310E /* PlistHelperTests.swift */; };
+		A895A833256962920043310E /* DateUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A832256962920043310E /* DateUtilTests.swift */; };
+		A895A8352569667A0043310E /* RMResultPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A8342569667A0043310E /* RMResultPresenterTests.swift */; };
 		E607685F9DB3F22CA86075AD /* Pods_RequestMgmtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F056C1FA509D946D7451350 /* Pods_RequestMgmtTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +59,6 @@
 		A874E18A25665E940018A492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A874E18C25665E940018A492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A874E19125665E960018A492 /* RequestMgmtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RequestMgmtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A874E19525665E960018A492 /* RequestMgmtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMgmtTests.swift; sourceTree = "<group>"; };
 		A874E19725665E960018A492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A874E19C25665E960018A492 /* RequestMgmtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RequestMgmtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A874E1A025665E960018A492 /* RequestMgmtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMgmtUITests.swift; sourceTree = "<group>"; };
@@ -75,6 +76,9 @@
 		A895A8262568949C0043310E /* PlistHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistHelper.swift; sourceTree = "<group>"; };
 		A895A8272568949C0043310E /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		A895A82D2568A9BD0043310E /* RequestMgmt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RequestMgmt-Bridging-Header.h"; sourceTree = "<group>"; };
+		A895A830256962370043310E /* PlistHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistHelperTests.swift; sourceTree = "<group>"; };
+		A895A832256962920043310E /* DateUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilTests.swift; sourceTree = "<group>"; };
+		A895A8342569667A0043310E /* RMResultPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMResultPresenterTests.swift; sourceTree = "<group>"; };
 		B6520B91CF547DE00A9DDBE4 /* Pods-RequestMgmtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestMgmtUITests.release.xcconfig"; path = "Target Support Files/Pods-RequestMgmtUITests/Pods-RequestMgmtUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E9C1EF12117E02A9B10814DC /* Pods-RequestMgmtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestMgmtTests.debug.xcconfig"; path = "Target Support Files/Pods-RequestMgmtTests/Pods-RequestMgmtTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED9CBB167B10E6D5A282D3CE /* Pods-RequestMgmtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestMgmtUITests.debug.xcconfig"; path = "Target Support Files/Pods-RequestMgmtUITests/Pods-RequestMgmtUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,8 +159,10 @@
 		A874E19425665E960018A492 /* RequestMgmtTests */ = {
 			isa = PBXGroup;
 			children = (
-				A874E19525665E960018A492 /* RequestMgmtTests.swift */,
 				A874E19725665E960018A492 /* Info.plist */,
+				A895A830256962370043310E /* PlistHelperTests.swift */,
+				A895A832256962920043310E /* DateUtilTests.swift */,
+				A895A8342569667A0043310E /* RMResultPresenterTests.swift */,
 			);
 			path = RequestMgmtTests;
 			sourceTree = "<group>";
@@ -535,7 +541,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A874E19625665E960018A492 /* RequestMgmtTests.swift in Sources */,
+				A895A8352569667A0043310E /* RMResultPresenterTests.swift in Sources */,
+				A895A831256962370043310E /* PlistHelperTests.swift in Sources */,
+				A895A833256962920043310E /* DateUtilTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
