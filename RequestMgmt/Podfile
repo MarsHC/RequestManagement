@@ -3,10 +3,13 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-target 'RequestMgmt' do
-  pod 'SnapKit', '~> 5.0.0'
-  pod 'Alamofire', '~> 5.0.0-rc.3'
-  pod 'KakaJSON', '~> 1.1.2'
-  pod 'MJRefresh'
-  pod 'MBProgressHUD'
+targetsArray = ['RequestMgmt', 'RequestMgmtTests','RequestMgmtUITests']
+targetsArray.each do |t|
+    target t do
+        pod 'SnapKit', '~> 5.0.0'
+        pod 'Alamofire', '~> 5.0.0-rc.3'
+        pod 'KakaJSON', '~> 1.1.2'
+        pod 'MJRefresh'
+        pod 'MBProgressHUD'
+    end
 end
